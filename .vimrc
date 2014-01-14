@@ -3,8 +3,17 @@ set vb t_vb=      " turning off fucking bells
 set nocompatible  " stops vim from behaving in a strictly vi compatible way
 set mouse=a
 
-map <F2> <Esc>:set mouse=a<CR>
-map <F3> <Esc>:set mouse=<CR>
+map <F2> <Esc>:call ToggleMouse()<CR>
+
+function! ToggleMouse()
+    if &mouse=='a'
+        set mouse=
+        echo "Mouse usage disabled"
+    else
+        set mouse=a
+        echo "Mouse usage enabled"
+    endif
+endfunction
 
 " ==== Indentation, tabs, and spaces ==== 
 set expandtab     " when you hit tab, spaces happen
