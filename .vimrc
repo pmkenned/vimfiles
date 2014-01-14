@@ -3,6 +3,9 @@ set vb t_vb=      " turning off fucking bells
 set nocompatible  " stops vim from behaving in a strictly vi compatible way
 set mouse=a
 
+map <F2> <Esc>:set mouse=a<CR>
+map <F3> <Esc>:set mouse=<CR>
+
 " ==== Indentation, tabs, and spaces ==== 
 set expandtab     " when you hit tab, spaces happen
 set shiftwidth=4  " indent by one column when hitting tab
