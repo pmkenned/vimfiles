@@ -7,9 +7,11 @@ map <F2> <Esc>:call ToggleMouse()<CR>
 
 function! ToggleMouse()
     if &mouse=='a'
+        set paste
         set mouse=
         echo "Mouse usage disabled"
     else
+        set nopaste
         set mouse=a
         echo "Mouse usage enabled"
     endif
