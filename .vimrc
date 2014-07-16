@@ -17,7 +17,7 @@ function! ToggleMouse()
     endif
 endfunction
 
- ==== Status line ====
+" ==== Status line ====
 set laststatus=2
 set statusline=
 set statusline +=%1*\ %n\ %*            "buffer number
